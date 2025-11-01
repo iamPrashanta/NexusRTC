@@ -1,0 +1,23 @@
+nexusrtc/
+├─ package.json
+├─ tsconfig.json
+├─ src/
+│  ├─ index.ts                // public API
+│  ├─ server/
+│  │  ├─ app.ts               // express + socket.io integration
+│  │  └─ handlers.ts
+│  ├─ sfu/
+│  │  ├─ mediasoupManager.ts  // create workers, routers, producers/consumers
+│  ├─ recorder/
+│  │  ├─ ffmpegWorker.ts      // spawn ffmpeg, manage lifecycle
+│  ├─ storage/
+│  │  ├─ s3Adapter.ts
+│  │  └─ localAdapter.ts
+│  ├─ config/
+│  │  └─ defaults.ts
+│  ├─ types/
+│  └─ utils/
+├─ examples/
+│  ├─ server-example/
+│  └─ client-example/
+└─ README.md
